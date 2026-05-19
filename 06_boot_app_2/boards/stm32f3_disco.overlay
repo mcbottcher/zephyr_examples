@@ -1,0 +1,11 @@
+/ {
+    chosen {
+        zephyr,uart-mcumgr = &usart1;
+    };
+
+    aliases {
+        /* To change the application and see it working we can just switch LED colour */
+        /* my-led = &red_led_3; */
+        my-led = &blue_led_4;
+    };
+};
