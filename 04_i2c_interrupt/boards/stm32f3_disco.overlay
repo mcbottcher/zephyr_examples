@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        led-n  = &red_led_3;    /* PE9  */
+        led-ne = &orange_led_5; /* PE10 */
+        led-e  = &green_led_7;  /* PE11 */
+        led-se = &blue_led_9;   /* PE12 */
+        led-s  = &red_led_10;   /* PE13 */
+        led-sw = &orange_led_8; /* PE14 */
+        led-w  = &green_led_6;  /* PE15 */
+        led-nw = &blue_led_4;   /* PE8  */
+    };
+};
