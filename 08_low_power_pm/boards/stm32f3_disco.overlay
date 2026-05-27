@@ -1,0 +1,17 @@
+/ {
+    aliases {
+        my-led = &red_led_3;
+    };
+
+    led_indicator_0: led_indicator {
+        compatible = "example,led-indicator";
+        status-gpios = <&gpioe 8 GPIO_ACTIVE_HIGH>;  /* blue_led_4 — on while awake */
+        status = "okay";
+    };
+
+};
+
+/* Hand PE8 (blue_led_4) exclusively to the led_indicator driver. */
+&blue_led_4 {
+    status = "disabled";
+};
