@@ -1,0 +1,6 @@
+config LED_INDICATOR
+	bool "Example LED indicator driver"
+	default n
+	depends on GPIO && PM_DEVICE
+	help
+	  Enable the led_indicator out-of-tree device driver.

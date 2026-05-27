@@ -1,0 +1,11 @@
+description: Example LED indicator driver
+
+compatible: "example,led-indicator"
+
+include: base.yaml
+
+properties:
+  status-gpios:
+    type: phandle-array
+    required: true
+    description: GPIO pin used as the awake/status indicator LED
