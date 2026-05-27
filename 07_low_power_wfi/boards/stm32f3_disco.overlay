@@ -1,0 +1,12 @@
+/ {
+    aliases {
+        my-led = &red_led_3;
+    };
+
+    /* gpio_keys is the board's gpio-keys node (stm32f3_disco.dts), which contains
+     * the user_button on PA0. The driver handles the ISR and debounce internally,
+     * reporting events through the Zephyr input subsystem. */
+    gpio_keys {
+        debounce-interval-ms = <20>;
+    };
+};
