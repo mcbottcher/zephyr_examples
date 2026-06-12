@@ -1,0 +1,22 @@
+/ {
+    led_indicator_blue: led_indicator_blue {
+        compatible = "example,led-indicator";
+        status-gpios = <&gpioe 8 GPIO_ACTIVE_HIGH>;  /* blue_led_4 */
+        status = "okay";
+    };
+
+    led_indicator_orange: led_indicator_orange {
+        compatible = "example,led-indicator";
+        status-gpios = <&gpioe 10 GPIO_ACTIVE_HIGH>;  /* orange_led_5 */
+        status = "okay";
+    };
+};
+
+/* Hand these pins exclusively to the led_indicator driver. */
+&blue_led_4 {
+    status = "disabled";
+};
+
+&orange_led_5 {
+    status = "disabled";
+};
